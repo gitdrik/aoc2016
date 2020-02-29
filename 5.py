@@ -1,9 +1,7 @@
 import hashlib
 
 id = 'abbhdwsy'
-
 code = ''
-
 i = 0
 while len(code) < 8:
     s = id+str(i)
