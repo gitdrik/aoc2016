@@ -3,6 +3,7 @@ with open('12.txt') as f:
     for line in f:
         l.append(line.strip().split())
 
+# c = 0 is part 1, c = 1 is part 2
 regs = {'a':0,'b':0,'c':1,'d':0}
 i = 0
 while i < len(l):
