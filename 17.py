@@ -19,7 +19,6 @@ while q:
         print(path)
         break
     ods = openDoors(path)
-    print(ods)
     for (a, b, p) in [(x,y-1,'U'),(x,y+1,'D'),(x-1,y,'L'),(x+1,y,'R')]:
         if a in range(4) and b in range(4) and p in ods:
             q.append((a,b,path+p))
