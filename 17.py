@@ -1,4 +1,5 @@
 from hashlib import md5
+import sys
 
 def openDoors(path):
     od = ''
@@ -12,10 +13,10 @@ def openDoors(path):
 q = [(0,0,'')]
 while q:
     (x, y, path) = q.pop(0)
-    if (x, y) == (3, 3):
-        print(path)
-        break
     ods = openDoors(path)
     for (a, b, p) in [(x,y-1,'U'),(x,y+1,'D'),(x-1,y,'L'),(x+1,y,'R')]:
         if a in range(4) and b in range(4) and p in ods:
+            if (a,b) == (3,3):
+                print(path+p)
+                sys.exit(0)
             q.append((a,b,path+p))
