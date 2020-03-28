@@ -1,8 +1,7 @@
-import hashlib
+from hashlib import md5
 
 def openDoors(path):
-    s = 'vkjiggvb'+path
-    s = hashlib.md5(s.encode()).hexdigest()
+    s = md5(('vkjiggvb'+path).encode()).hexdigest()
     od = ''
     if s[0] in 'bcdef': od += 'U'
     if s[1] in 'bcdef': od += 'D'
