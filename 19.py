@@ -19,9 +19,3 @@ while len(es) > 1:
     es.popleft()
     
 print('Part 2: ', es[0])
-
-#259778 is to low
-
-
-
-
