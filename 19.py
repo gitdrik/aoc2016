@@ -17,5 +17,4 @@ while len(es) > 1:
     if len(es)%2 == 0:
         es.rotate(-1)
     es.popleft()
-    
 print('Part 2: ', es[0])
