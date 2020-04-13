@@ -1,7 +1,7 @@
 import collections
 
 msg = ['','','','','','','','']
-with open('6.txt') as f:
+with open('06.txt') as f:
     for line in f:
         for i, c in enumerate(line.strip()):
             msg[i] += c
