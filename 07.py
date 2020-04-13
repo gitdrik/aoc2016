@@ -19,7 +19,7 @@ def ababab(l):
 
 tls = 0
 ssl = 0
-with open('7.txt') as f:
+with open('07.txt') as f:
     for line in f:
         l = line.strip().replace('[',']').split(']')
         if any([abba(x) for x in l[::2]]) and not any([abba(x) for x in l[1::2]]):
