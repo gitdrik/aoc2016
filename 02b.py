@@ -1,5 +1,5 @@
 digs = []
-with open('2.txt') as f:
+with open('02.txt') as f:
     for line in f:
         digs.append(line.strip())
 
