@@ -24,7 +24,7 @@ def length(s):
             s = s[i+1+a:]
     return l
 
-with open('9.txt') as f:
+with open('09.txt') as f:
     for line in f:
         print('Part 1: ', len(unpack(line.strip().replace(' ',''))))
         print('Part 2: ', length(line.strip().replace(' ','')))
