@@ -1,6 +1,6 @@
 from operator import itemgetter
 idsum = 0
-with open('4.txt') as f:
+with open('04.txt') as f:
     for line in f:
         l = line.split('[')
         chk = l[1][:-2]
