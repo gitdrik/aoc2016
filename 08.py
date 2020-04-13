@@ -1,7 +1,7 @@
 import copy
 display = [[0]*50,[0]*50,[0]*50,[0]*50,[0]*50,[0]*50]
 
-with open('8.txt') as f:
+with open('08.txt') as f:
     for line in f:
         l = line.strip().replace('x=','').replace('y=','').replace('x',' ').replace('by ','').split(' ')
         a, b = int(l[-2]), int(l[-1])
