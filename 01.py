@@ -1,4 +1,4 @@
-with open('1.txt') as f:
+with open('01.txt') as f:
     moves = f.read().strip().split(',')
     moves = [x.strip() for x in moves]
 
