@@ -1,5 +1,5 @@
 ts = []
-with open('3.txt') as f:
+with open('03.txt') as f:
     for line in f:
         t = [int(line[0:5]), int(line[5:10]), int(line[10:])]
         ts.append(t)
