@@ -1,5 +1,4 @@
 import sys
-
 l = []
 with open('25.txt') as f:
     for line in f:
